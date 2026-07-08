@@ -4,12 +4,12 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  gap: 60px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: #FFFFE0;
+  border: 4px solid #dadada;
+  background-color: #00FF00;
 }
 
 .cards .cards-card-body {
