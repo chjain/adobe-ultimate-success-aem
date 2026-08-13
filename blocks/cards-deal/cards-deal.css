@@ -1,0 +1,87 @@
+/* cards-deal: row of promotional deal cards */
+
+.cards-deal > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cards-deal .cards-deal-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cards-deal .cards-deal-card-image {
+  line-height: 0;
+  text-align: center;
+}
+
+.cards-deal .cards-deal-card-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.cards-deal .cards-deal-card-body {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cards-deal .cards-deal-card-body h2,
+.cards-deal .cards-deal-card-body h3 {
+  margin: 0;
+  font-size: var(--heading-font-size-s);
+}
+
+.cards-deal .cards-deal-card-body p {
+  margin: 0;
+  font-size: var(--body-font-size-xs);
+}
+
+/* Eyebrow: first short paragraph rendered uppercase (e.g. "APPLE") */
+.cards-deal .cards-deal-card-body p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: var(--body-font-size-xs);
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.cards-deal .cards-deal-card-body .button-container {
+  margin-top: 8px;
+}
+
+.cards-deal .cards-deal-card-body a.button {
+  background: var(--brand-magenta);
+  border-color: var(--brand-magenta);
+  border-radius: var(--brand-cta-radius);
+  font-weight: 600;
+}
+
+/* Full-bleed graphic tile (e.g. "250 reasons to choose T-Mobile") */
+.cards-deal .cards-deal-card-graphic {
+  padding: 0;
+}
+
+.cards-deal .cards-deal-card-graphic .cards-deal-card-image img {
+  aspect-ratio: auto;
+  object-fit: cover;
+  height: 100%;
+}
+
+@media (width >= 900px) {
+  .cards-deal > ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}

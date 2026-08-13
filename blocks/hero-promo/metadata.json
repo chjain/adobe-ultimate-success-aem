@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-promo",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-08-12T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.t-mobile.com/offers/apple-iphone-deals",
+    "originPage": "T-Mobile Apple iPhone deals landing page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "accent",
+    "density": "compact",
+    "purpose": "promo-banner",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "single promo line + optional disclosure link",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "full-width promotional announcement bands",
+      "site-wide offer / sale banners",
+      "single-line CTA strips with fine print"
+    ],
+    "notSuitableFor": [
+      "hero sections with background imagery",
+      "multi-line marketing heroes with product shots"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/offers/apple-iphone-deals"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-12T00:00:00.000Z"
+  }
+}
