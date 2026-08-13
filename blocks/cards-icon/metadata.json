@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-icon",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-08-12T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.t-mobile.com/offers/apple-iphone-deals",
+    "originPage": "T-Mobile Apple iPhone deals landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "feature-tiles",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + short heading + supporting line with inline link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "reassurance / value-prop tile rows",
+      "icon + label + short text feature strips",
+      "benefit highlight rows"
+    ],
+    "notSuitableFor": [
+      "product cards with large imagery and CTAs",
+      "text-heavy content cards",
+      "carousels"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/offers/apple-iphone-deals"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-12T00:00:00.000Z"
+  }
+}

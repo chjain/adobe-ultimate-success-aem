@@ -1,0 +1,57 @@
+/* cards-icon: row of icon / badge feature tiles */
+
+.cards-icon > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cards-icon .cards-icon-tile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.cards-icon .cards-icon-tile-icon {
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
+.cards-icon .cards-icon-tile-icon img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.cards-icon .cards-icon-tile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cards-icon .cards-icon-tile-body h2,
+.cards-icon .cards-icon-tile-body h3 {
+  margin: 0;
+  font-size: var(--heading-font-size-xs);
+}
+
+.cards-icon .cards-icon-tile-body p {
+  margin: 0;
+  font-size: var(--body-font-size-xs);
+}
+
+.cards-icon .cards-icon-tile-body a {
+  color: var(--brand-magenta);
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .cards-icon > ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}

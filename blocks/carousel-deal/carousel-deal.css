@@ -1,0 +1,113 @@
+/* carousel-deal: horizontally scrolling deal card carousel */
+
+.carousel-deal {
+  position: relative;
+}
+
+.carousel-deal .carousel-deal-track {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 8px;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.carousel-deal .carousel-deal-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-deal .carousel-deal-slide {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.carousel-deal .carousel-deal-slide-image {
+  line-height: 0;
+  text-align: center;
+}
+
+.carousel-deal .carousel-deal-slide-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.carousel-deal .carousel-deal-slide-body {
+  padding: 16px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.carousel-deal .carousel-deal-slide-body h2,
+.carousel-deal .carousel-deal-slide-body h3 {
+  margin: 0;
+  font-size: var(--heading-font-size-xs);
+}
+
+.carousel-deal .carousel-deal-slide-body p {
+  margin: 0;
+  font-size: var(--body-font-size-xs);
+}
+
+.carousel-deal .carousel-deal-slide-body p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.carousel-deal .carousel-deal-slide-body a.button {
+  background: var(--brand-magenta);
+  border-color: var(--brand-magenta);
+  border-radius: var(--brand-cta-radius);
+  font-weight: 600;
+}
+
+/* Navigation controls */
+.carousel-deal .carousel-deal-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.carousel-deal .carousel-deal-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--brand-magenta);
+  background: #fff;
+  color: var(--brand-magenta);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.carousel-deal .carousel-deal-btn:hover {
+  background: var(--brand-magenta);
+  color: #fff;
+}
+
+@media (width >= 600px) {
+  .carousel-deal .carousel-deal-slide {
+    flex-basis: 45%;
+  }
+}
+
+@media (width >= 900px) {
+  .carousel-deal .carousel-deal-slide {
+    flex-basis: 30%;
+  }
+}

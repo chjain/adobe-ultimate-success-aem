@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.t-mobile.com/offers/apple-iphone-deals?INTNAV=tNav%3ADeals%3AApple",
+  "path": "offers/apple-iphone-deals",
+  "timestamp": "2026-08-12T18:10:28.843Z",
+  "title": "Our Best Apple Deals: iPhone, iPad, Apple Watch Offers & More",
+  "template": "apple-iphone-deals",
+  "blocks": [
+    "hero-promo",
+    "columns",
+    "cards-deal",
+    "cards-icon",
+    "carousel-deal",
+    "carousel-deal",
+    "carousel-deal",
+    "cards-explore"
+  ]
+}

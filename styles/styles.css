@@ -38,6 +38,11 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  /* T-Mobile brand tokens (extracted from source) */
+  --brand-magenta: #e20074;
+  --brand-magenta-dark: #bd0066;
+  --brand-cta-radius: 4px;
 }
 
 /* fallback fonts */
@@ -179,10 +184,10 @@ button.button {
   max-width: 100%;
   margin: 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: var(--brand-cta-radius);
   padding: 0.5em 1.2em;
   font: inherit;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.25;
   text-decoration: none;
   cursor: pointer;
@@ -199,18 +204,18 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
+  border-color: var(--brand-magenta);
+  background-color: var(--brand-magenta);
+  color: #fff;
 }
 
 a.button.primary:hover,
 a.button.primary:focus-visible,
 button.button.primary:hover,
 button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  border-color: var(--brand-magenta-dark);
+  background-color: var(--brand-magenta-dark);
+  color: #fff;
 }
 
 a.button.primary[aria-disabled="true"],

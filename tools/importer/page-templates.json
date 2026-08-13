@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "apple-iphone-deals",
+      "urls": [
+        "https://www.t-mobile.com/offers/apple-iphone-deals?INTNAV=tNav%3ADeals%3AApple"
+      ],
+      "description": "T-Mobile Apple iPhone deals landing page: an offers/deals page featuring a promo banner, a featured hero deal, deal-card rows, icon feature tiles, three horizontally scrolling deal carousels (iPhone / Apple Watch + iPad / accessories), and an 'Explore T-Mobile' icon-link row.",
+      "coverageGaps": [],
+      "blocks": [
+        {
+          "name": "hero-promo",
+          "instances": [
+            "#APPLE-DEALS-MOD-0-Prospect",
+            ".cmp-experiencefragment--xftmo-pencil-banner"
+          ]
+        },
+        {
+          "name": "columns",
+          "instances": [
+            "#APPLE-DEALS-MOD-1-Prospect"
+          ]
+        },
+        {
+          "name": "cards-deal",
+          "instances": [
+            ".cmp-experiencefragment--prospect-apple-deals-mod-2"
+          ]
+        },
+        {
+          "name": "cards-icon",
+          "instances": [
+            ".cmp-experiencefragment--prospect-apple-deals-mod-3"
+          ]
+        },
+        {
+          "name": "carousel-deal",
+          "instances": [
+            ".cmp-experiencefragment--prospect-apple-deals-mod-4",
+            ".cmp-experiencefragment--prospect-apple-deals-mod-5",
+            ".cmp-experiencefragment--prospect-apple-deals-mod-6"
+          ]
+        },
+        {
+          "name": "cards-explore",
+          "instances": [
+            ".cmp-experiencefragment--prospect-apple-deals-mod-8"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-promo-banner",
+          "name": "Full-width magenta promo banner",
+          "selector": [
+            ".cmp-experiencefragment--xftmo-pencil-banner"
+          ],
+          "style": "magenta-promo",
+          "blocks": [
+            "hero-promo"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

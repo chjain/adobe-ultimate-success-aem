@@ -1,0 +1,64 @@
+/* hero-promo: full-width magenta promo banner */
+
+.hero-promo {
+  position: relative;
+  background: linear-gradient(90deg, var(--brand-magenta) 0%, var(--brand-magenta-dark) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 14px 24px;
+}
+
+.hero-promo .hero-promo-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-promo .hero-promo-content p,
+.hero-promo .hero-promo-content h1,
+.hero-promo .hero-promo-content h2,
+.hero-promo .hero-promo-content h3 {
+  margin: 0;
+  color: #fff;
+  font-size: var(--body-font-size-s);
+  font-weight: 800;
+}
+
+.hero-promo a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.hero-promo .hero-promo-terms {
+  position: relative;
+  z-index: 2;
+  font-size: var(--body-font-size-xs);
+  font-weight: 400;
+}
+
+/* Whole-banner overlay link (sits above the band, below inline terms link) */
+.hero-promo .hero-promo-overlay-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  font-size: 0;
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .hero-promo .hero-promo-content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-promo .hero-promo-content p,
+  .hero-promo .hero-promo-content h1,
+  .hero-promo .hero-promo-content h2,
+  .hero-promo .hero-promo-content h3 {
+    font-size: var(--body-font-size-m);
+  }
+}

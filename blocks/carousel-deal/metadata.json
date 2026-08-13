@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-deal",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-08-12T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.t-mobile.com/offers/apple-iphone-deals",
+    "originPage": "T-Mobile Apple iPhone deals landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-deal-carousel",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "optional badge/tag + eyebrow + image + heading + body + CTA + legal per slide",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "horizontally scrolling product / offer carousels",
+      "deal galleries with more items than fit in a single row",
+      "iPhone / Watch / iPad / accessory deal sliders"
+    ],
+    "notSuitableFor": [
+      "static 2-3 up card rows (use cards-deal)",
+      "hero banners",
+      "icon feature strips"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/offers/apple-iphone-deals"],
+    "reuseCount": 3,
+    "lastUsed": "2026-08-12T00:00:00.000Z"
+  }
+}
